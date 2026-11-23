@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- Methods run in parallel; each thread gets its own browser (DriverFactory uses a ThreadLocal). -->
+<suite name="OrangeHRM" parallel="methods" thread-count="3" verbose="1">
+  <listeners>
+    <listener class-name="com.afzal.orangehrm.listeners.ExtentReportListener"/>
+    <listener class-name="com.afzal.orangehrm.listeners.RetryTransformer"/>
+  </listeners>
+  <test name="UI regression">
+    <packages>
+      <package name="com.afzal.orangehrm.tests"/>
+    </packages>
+  </test>
+</suite>
