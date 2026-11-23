@@ -1,0 +1,5 @@
+[
+  { "id": "LOGIN-02", "case": "wrong password", "username": "Admin", "password": "wrong-password", "message": "Invalid credentials" },
+  { "id": "LOGIN-03", "case": "unknown user", "username": "no.such.user", "password": "admin123", "message": "Invalid credentials" },
+  { "id": "LOGIN-04", "case": "password is case sensitive", "username": "Admin", "password": "ADMIN123", "message": "Invalid credentials" }
+]
